@@ -1,0 +1,4 @@
+coverage/
+types/
+flow-typed/
+node_modules/

@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "root-import",
+    "syntax-flow",
+    ["styled-jsx/babel", { "plugins": ["styled-jsx-plugin-postcss"] }]
+  ],
+  "presets": ["env", "stage-0", "next/babel"]
+}
