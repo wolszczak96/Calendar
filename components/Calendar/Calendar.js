@@ -21,13 +21,23 @@ const Calendar = ({
         <h1 className="month-display">{monthName(activeMonth)}</h1>
         <div className="year-display">{activeYear}</div>
       </div>
-      <div className="switch">
-        <button onClick={() => setActiveDate(activeYear, activeMonth - 1, 1)}>
-          {'<'}
-        </button>
-        <button onClick={() => setActiveDate(activeYear, activeMonth + 1, 1)}>
-          {'>'}
-        </button>
+      <div className="date-control">
+        <div className="switch">
+          <button onClick={() => setActiveDate(activeYear, activeMonth - 1, 1)}>
+            {'<'}
+          </button>
+          <button onClick={() => setActiveDate(activeYear, activeMonth + 1, 1)}>
+            {'>'}
+          </button>
+        </div>
+        <div className="switch">
+          <button onClick={() => setActiveDate(activeYear - 1, activeMonth, 1)}>
+            {'<'}
+          </button>
+          <button onClick={() => setActiveDate(activeYear + 1, activeMonth, 1)}>
+            {'>'}
+          </button>
+        </div>
       </div>
     </div>
     <div className="days-display">
